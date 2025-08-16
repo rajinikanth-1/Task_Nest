@@ -1,0 +1,61 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f4f4f4;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-input {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.filters {
+  margin-bottom: 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul#task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+body.dark .task {
+  background: #2c2c2c;
+}
+
+.task.completed span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.priority-low { border-left: 5px solid #4caf50; }
+.priority-medium { border-left: 5px solid #ff9800; }
+.priority-high { border-left: 5px solid #f44336; }
